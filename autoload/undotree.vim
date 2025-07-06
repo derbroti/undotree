@@ -594,7 +594,7 @@ function! s:undotree.Show() abort
     setlocal noswapfile
     setlocal buftype=nofile
     setlocal bufhidden=delete
-    setlocal nowrap
+    setlocal wrap
     setlocal nolist
     setlocal foldcolumn=0
     setlocal nobuflisted
@@ -1364,7 +1364,7 @@ function! s:diffpanel.Show() abort
     setlocal noswapfile
     setlocal buftype=nofile
     setlocal bufhidden=delete
-    setlocal nowrap
+    setlocal wrap
     setlocal nolist
     setlocal nobuflisted
     setlocal nospell
