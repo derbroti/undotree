@@ -1300,7 +1300,11 @@ function! s:diffpanel.GetStatusLine() abort
         let add = self.changes.add
         let del = self.changes.del
     endif
-    return string(sum).' '.repeat('+',add).repeat('-',del)
+    if sum > 0
+        return string(sum).' '.repeat('+',add).repeat('-',del)
+    else
+        return ''
+    endif
 endfunction
 
 function! s:diffpanel.Init() abort
